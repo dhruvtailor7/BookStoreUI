@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="344354043561-2cdqs048ekb362gtagkkad4v64m5fsp6.apps.googleusercontent.com">
+        <script src="//connect.facebook.net/en_US/all.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://apis.google.com/js/api:client.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <title>vueproject</title>
+ 
+     <script>
+       FB.init({
+            appId  : '748939595846720',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
+            xfbml  : true,  // parse XFBML
+            oauth : true
+        });
+
+    // Load the SDK Asynchronously
+    (function(d){
+       var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement('script'); js.id = id; js.async = true;
+      //  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1\";
+       ref.parentNode.insertBefore(js, ref);
+     }(document));
+       </script>
+    <style>
+      root {
+        font-size: 16px;
+      }
+      body {
+        margin: 0px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but vueproject doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
